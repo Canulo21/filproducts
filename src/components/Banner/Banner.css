@@ -1,0 +1,197 @@
+.splide__track {
+  height: 100%;
+}
+
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+}
+.splide__arrow {
+  background: var(--secondary-color);
+  width: 4em;
+  height: 4em;
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.splide__arrow:hover {
+  background: var(--primary-color) !important;
+  opacity: 1;
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the space without stretching */
+  animation: slowZoom 20s infinite alternate;
+}
+
+/* for banner */
+.splide__slide {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.splide__slide::after,
+.splide__slide::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.splide__slide::before {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.splide__slide::after {
+}
+
+.bannertext-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  left: 8%;
+  z-index: 1;
+}
+.bannertext-wrap .title-top,
+.bannertext-wrap .title-btm {
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-shadow: 0 10px 12px rgba(0, 0, 0, 0.8);
+}
+.bannertext-wrap .title-top {
+  color: var(--secondary-color);
+}
+.bannertext-wrap .title-btm,
+.bannertext-wrap .sub-text {
+  color: #fff;
+}
+.bannertext-wrap .sub-text {
+  margin-top: 20px;
+}
+.bannertext-wrap .sub-text p {
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+/* end */
+
+/* media query */
+@media only screen and (max-width: 1850px) {
+  .bannertext-wrap {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 74px;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .bannertext-wrap {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 64px;
+  }
+  .splide__arrow {
+    width: 3em;
+    height: 3em;
+  }
+}
+@media only screen and (max-width: 1099px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 64px;
+    line-height: 120%;
+  }
+  .bannertext-wrap {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 0 100px;
+  }
+  .bannertext-wrap .sub-text {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 58px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 52px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .bannertext-wrap {
+    padding: 0 70px;
+  }
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 46px;
+  }
+  .bannertext-wrap .sub-text {
+    margin-top: 20px;
+  }
+  .splide__arrow {
+    width: 2.2em;
+    height: 2.2em;
+  }
+  .splide__arrow svg {
+    height: 15px;
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .bannertext-wrap {
+    padding: 0 20px;
+  }
+  .bannertext-wrap .title-top,
+  .bannertext-wrap .title-btm {
+    font-size: 36px;
+  }
+  .splide__arrow {
+    display: none;
+  }
+}
