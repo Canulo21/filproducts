@@ -284,7 +284,7 @@ a,
   overflow: hidden;
   z-index: 1;
 }
-#faq::before {
+/* #faq::before {
   background: url(./assets/images/faq-bg.png) no-repeat;
   width: 700px;
   height: 700px;
@@ -293,7 +293,7 @@ a,
   top: 5%;
   left: 0;
   z-index: -1;
-}
+} */
 /* for Faq Acoordion  */
 .faq-question {
   position: relative;
