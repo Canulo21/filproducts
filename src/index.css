@@ -536,6 +536,17 @@ img.map-img {
   .team-container > .team-item {
     width: calc(25% - 1 * 23px);
   }
+  .info-container > .info-item {
+    width: calc(20% - 1 * 5px);
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .info-container {
+    gap: 20px;
+  }
+  .info-container > .info-item {
+    width: calc(25% - 1 * 30px);
+  }
 }
 @media only screen and (max-width: 1199px) {
   .hamburger-wrap {
@@ -548,12 +559,23 @@ img.map-img {
     width: calc(33.333% - 1 * 23px);
   }
 }
+@media only screen and (max-width: 1130px) {
+  .info-container > .info-item {
+    width: calc(50% - 1 * 30px);
+  }
+}
 @media only screen and (max-width: 830px) {
   .team-container > .team-item {
     width: calc(50% - 1 * 16px);
   }
 }
 @media only screen and (max-width: 768px) {
+  .info-container {
+    gap: 15px;
+  }
+  .info-container > .info-item {
+    width: calc(50% - 1 * 15px);
+  }
   .showcase-icon svg {
     width: 40px;
     height: 40px;
@@ -577,6 +599,9 @@ img.map-img {
     padding: 0 10px;
   }
   .team-container > .team-item {
+    width: 100%;
+  }
+  .info-container > .info-item {
     width: 100%;
   }
 }

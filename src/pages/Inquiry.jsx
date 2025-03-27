@@ -5,14 +5,14 @@ import OurPartnerLogoSlide from "../components/FeautresUi/OurPartner/OurPartnerL
 function Inquiry() {
   return (
     <>
-      <section id="inquiry" className="py-20 shadow-lg relative">
+      <section id="inquiry" className="py-14 lg:py-20 shadow-lg relative">
         <div className="wrap text-center ">
           <h1 className="ornament-top bgR">Contact Details</h1>
         </div>
 
         <div className="details-wrap">
           <div className="wrap">
-            <div className="info-container flex flex-wrap mt-16">
+            <div className="info-container flex flex-wrap mt-10 md:mt-16">
               <div className="info-item">
                 <div className="icon-holder">
                   <MapPinHouseIcon size={90} strokeWidth={1} />
